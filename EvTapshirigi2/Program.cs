@@ -4,13 +4,24 @@
     {
         static void Main(string[] args)
         {
-            int[] arr = { 15, 25, 35, 55, 78, 90, 12, 74 };
+        Console.Write("Massivin uzunlugunu daxil edin: ");
+            int n = int.Parse(Console.ReadLine());
+            int[] arr = new int[n];
+
+
+
 
             for (int i = 0; i < arr.Length; i++)
             {
-                if (arr[i] % 5 == 0 && arr[i] % 7 != 0)
-                    Console.WriteLine(arr[i]);
+                Console.Write($"arr[{i}]= ");
+                arr[i] = int.Parse(Console.ReadLine());
 
+            }
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] % 5 == 0 && arr[i] % 7 != 0)
+
+                    Console.WriteLine(arr[i]);
             }
         }
     }
